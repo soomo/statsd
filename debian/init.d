@@ -12,13 +12,13 @@
 NODE_BIN=$(which node)
 
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
-PATH=/sbin:/usr/sbin:/bin:/usr/bin
+PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
 DESC=statsd
 NAME=statsd
 USER=_statsd
 DAEMON=$(which node)
 DAEMON_ARGS="/usr/share/statsd/stats.js /etc/statsd/localConfig.js 2>&1 >> /var/log/statsd/statsd.log"
-PIDFILE=/var/run/$NAME.pid
+PIDFILE=/var/run/$NAME/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
 CHDIR="/usr/share/statsd"
 
