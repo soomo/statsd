@@ -1,5 +1,0 @@
-stats.js	/usr/share/statsd
-config.js	/usr/share/statsd
-backends/*.js  /usr/share/statsd/backends
-debian/localConfig.js	/etc/statsd
-debian/scripts/start	/usr/share/statsd/scripts
