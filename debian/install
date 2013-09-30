@@ -2,4 +2,3 @@ stats.js usr/share/statsd
 config.js usr/share/statsd
 lib/*.js usr/share/statsd/lib
 backends/*.js usr/share/statsd/backends
-debian/localConfig.js etc/statsd
